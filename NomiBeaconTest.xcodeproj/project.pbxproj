@@ -22,6 +22,11 @@
 		1534818018E5149A008075F0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1534816418E5149A008075F0 /* CoreData.framework */; };
 		1534818818E5149A008075F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1534818618E5149A008075F0 /* InfoPlist.strings */; };
 		1534818A18E5149A008075F0 /* NomiBeaconTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1534818918E5149A008075F0 /* NomiBeaconTestTests.m */; };
+		1534819418E514BC008075F0 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1534819318E514BC008075F0 /* main.storyboard */; };
+		1534819618E55F31008075F0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1534819518E55F31008075F0 /* CoreLocation.framework */; };
+		1534819818E55F3A008075F0 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1534819718E55F3A008075F0 /* CoreBluetooth.framework */; };
+		1534819A18E55F57008075F0 /* NomiBeaconSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1534819918E55F57008075F0 /* NomiBeaconSDK.framework */; };
+		1534819D18E55F89008075F0 /* MXGMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1534819C18E55F89008075F0 /* MXGMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,12 @@
 		1534818518E5149A008075F0 /* NomiBeaconTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NomiBeaconTestTests-Info.plist"; sourceTree = "<group>"; };
 		1534818718E5149A008075F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1534818918E5149A008075F0 /* NomiBeaconTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NomiBeaconTestTests.m; sourceTree = "<group>"; };
+		1534819318E514BC008075F0 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		1534819518E55F31008075F0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1534819718E55F3A008075F0 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		1534819918E55F57008075F0 /* NomiBeaconSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NomiBeaconSDK.framework; path = "../NomiMobileSDK.2014-03-13/NomiBeaconSDK.framework"; sourceTree = "<group>"; };
+		1534819B18E55F89008075F0 /* MXGMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXGMainViewController.h; sourceTree = "<group>"; };
+		1534819C18E55F89008075F0 /* MXGMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXGMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1534819A18E55F57008075F0 /* NomiBeaconSDK.framework in Frameworks */,
+				1534819818E55F3A008075F0 /* CoreBluetooth.framework in Frameworks */,
+				1534819618E55F31008075F0 /* CoreLocation.framework in Frameworks */,
 				1534816118E5149A008075F0 /* CoreGraphics.framework in Frameworks */,
 				1534816518E5149A008075F0 /* CoreData.framework in Frameworks */,
 				1534816318E5149A008075F0 /* UIKit.framework in Frameworks */,
@@ -103,6 +117,9 @@
 		1534815D18E5149A008075F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1534819918E55F57008075F0 /* NomiBeaconSDK.framework */,
+				1534819718E55F3A008075F0 /* CoreBluetooth.framework */,
+				1534819518E55F31008075F0 /* CoreLocation.framework */,
 				1534815E18E5149A008075F0 /* Foundation.framework */,
 				1534816018E5149A008075F0 /* CoreGraphics.framework */,
 				1534816218E5149A008075F0 /* UIKit.framework */,
@@ -117,6 +134,9 @@
 			children = (
 				1534816F18E5149A008075F0 /* MXGAppDelegate.h */,
 				1534817018E5149A008075F0 /* MXGAppDelegate.m */,
+				1534819B18E55F89008075F0 /* MXGMainViewController.h */,
+				1534819C18E55F89008075F0 /* MXGMainViewController.m */,
+				1534819318E514BC008075F0 /* main.storyboard */,
 				1534817518E5149A008075F0 /* Images.xcassets */,
 				1534817218E5149A008075F0 /* NomiBeaconTest.xcdatamodeld */,
 				1534816718E5149A008075F0 /* Supporting Files */,
@@ -230,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1534816B18E5149A008075F0 /* InfoPlist.strings in Resources */,
+				1534819418E514BC008075F0 /* main.storyboard in Resources */,
 				1534817618E5149A008075F0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +272,7 @@
 			files = (
 				1534817418E5149A008075F0 /* NomiBeaconTest.xcdatamodeld in Sources */,
 				1534816D18E5149A008075F0 /* main.m in Sources */,
+				1534819D18E55F89008075F0 /* MXGMainViewController.m in Sources */,
 				1534817118E5149A008075F0 /* MXGAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +394,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jayden.ma/Documents/NomiMobileSDK.2014-03-13",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NomiBeaconTest/NomiBeaconTest-Prefix.pch";
 				INFOPLIST_FILE = "NomiBeaconTest/NomiBeaconTest-Info.plist";
@@ -385,6 +411,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jayden.ma/Documents/NomiMobileSDK.2014-03-13",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NomiBeaconTest/NomiBeaconTest-Prefix.pch";
 				INFOPLIST_FILE = "NomiBeaconTest/NomiBeaconTest-Info.plist";
@@ -454,6 +484,7 @@
 				1534818F18E5149A008075F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1534819018E5149A008075F0 /* Build configuration list for PBXNativeTarget "NomiBeaconTestTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +493,7 @@
 				1534819218E5149A008075F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
